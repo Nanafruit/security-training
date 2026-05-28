@@ -27,12 +27,19 @@
     }
     .logo { width: 100px; margin-bottom: 20px; }
     .alert-icon { font-size: 56px; margin-bottom: 10px; }
-    h1 { color: #e53935; font-size: 1.8em; margin-bottom: 8px; }
+    h1 { color: #e53935; font-size: 1.8em; margin-bottom: 4px; }
+    h2 { color: #e53935; font-size: 1.3em; margin-bottom: 16px; font-weight: 600; }
     .subtitle {
       color: #555;
-      font-size: 1em;
+      font-size: 0.95em;
+      margin-bottom: 8px;
+      line-height: 1.7;
+    }
+    .subtitle-th {
+      color: #777;
+      font-size: 0.9em;
       margin-bottom: 20px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
     .divider {
       border: none;
@@ -45,7 +52,7 @@
       padding: 16px;
       color: #444;
       font-size: 0.95em;
-      line-height: 1.8;
+      line-height: 2;
     }
     .contact strong { color: #e53935; }
     .badge {
@@ -56,6 +63,7 @@
       border-radius: 20px;
       padding: 6px 16px;
       font-size: 0.8em;
+      line-height: 1.8;
     }
   </style>
 </head>
@@ -63,19 +71,29 @@
   <div class="card">
     <img src="Logonana.jpg" alt="Nana Fruits Logo" class="logo">
     <div class="alert-icon">⚠️</div>
+
     <h1>You Clicked a Suspicious Link!</h1>
+    <h2>คุณได้กดลิงก์ที่น่าสงสัย!</h2>
+
     <p class="subtitle">
       This was a <strong>Cybersecurity Awareness Test</strong><br>
-      conducted by the IT Department of Nana Fruits Co., Ltd.<br><br>
+      conducted by the IT Department of Nana Fruits Co., Ltd.<br>
       In a real attack, your account could have been compromised.
     </p>
+    <p class="subtitle-th">
+      นี่คือการทดสอบ <strong>ความตระหนักด้านความปลอดภัยทางไซเบอร์</strong><br>
+      ดำเนินการโดยฝ่าย IT ของบริษัท นานาฟรุ้ต จำกัด<br>
+      หากเป็นการโจมตีจริง บัญชีของคุณอาจถูกขโมยได้
+    </p>
+
     <hr class="divider">
+
     <div class="contact">
       Please contact IT Support for further guidance<br>
-      📞 <strong>IT Admin: Pui</strong><br>
+      กรุณาติดต่อฝ่าย IT เพื่อรับคำแนะนำเพิ่มเติม<br><br>
+      📞 <strong>IT Admin: คุณปุ้ย (Pui)</strong><br>
       ✉️ it-support@nanafruit.com
     </div>
-    <div class="badge">✅ Your account is safe — this was only a test</div>
   </div>
 </body>
 </html>
