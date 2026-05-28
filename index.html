@@ -2,24 +2,80 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>Security Alert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Alert — Nana Fruits</title>
   <style>
-    body { font-family: sans-serif; text-align: center; 
-           padding: 60px; background: #fff3cd; }
-    h1 { color: #856404; font-size: 2em; }
-    .box { background: white; border-radius: 12px; 
-           padding: 30px; max-width: 500px; margin: auto;
-           box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8e1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      border-top: 6px solid #e53935;
+    }
+    .logo { width: 100px; margin-bottom: 20px; }
+    .alert-icon { font-size: 56px; margin-bottom: 10px; }
+    h1 { color: #e53935; font-size: 1.8em; margin-bottom: 8px; }
+    .subtitle {
+      color: #555;
+      font-size: 1em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 20px 0;
+    }
+    .contact {
+      background: #fff3cd;
+      border-radius: 10px;
+      padding: 16px;
+      color: #444;
+      font-size: 0.95em;
+      line-height: 1.8;
+    }
+    .contact strong { color: #e53935; }
+    .badge {
+      display: inline-block;
+      margin-top: 20px;
+      background: #e8f5e9;
+      color: #2e7d32;
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 0.8em;
+    }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>⚠️ หยุด!</h1>
-    <p>คุณได้กดลิงก์ที่น่าสงสัย</p>
-    <p>นี่คือการทดสอบ <strong>Cybersecurity Awareness</strong><br>จากฝ่าย IT ของ Nana Fruits</p>
-    <hr>
-    <p>กรุณาติดต่อ IT Admin เพื่อปลดล็อค Account<br>
-    📞 <strong>IT Support:: Pui</strong></p>
+  <div class="card">
+    <img src="Logonana.jpg" alt="Nana Fruits Logo" class="logo">
+    <div class="alert-icon">⚠️</div>
+    <h1>You Clicked a Suspicious Link!</h1>
+    <p class="subtitle">
+      This was a <strong>Cybersecurity Awareness Test</strong><br>
+      conducted by the IT Department of Nana Fruits Co., Ltd.<br><br>
+      In a real attack, your account could have been compromised.
+    </p>
+    <hr class="divider">
+    <div class="contact">
+      Please contact IT Support for further guidance<br>
+      📞 <strong>IT Admin: Pui</strong><br>
+      ✉️ it-support@nanafruit.com
+    </div>
+    <div class="badge">✅ Your account is safe — this was only a test</div>
   </div>
 </body>
 </html>
